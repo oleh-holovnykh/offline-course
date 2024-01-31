@@ -32,7 +32,7 @@ export const OfflineCourse: React.FC = () => {
 
   return (
     <>
-      <div className='text-center mb-2'>
+      <div className='text-center mb-2 mt-4'>
         <span className='mb-2 block'>
           <b>Модуль:</b> 6000 грн
         </span>
