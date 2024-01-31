@@ -7,7 +7,7 @@ export const createSchedule = (
 ) => {
   let schedule = [...modules, ...practices, ...retreats];
   const currentDate = new Date();
-  currentDate.setDate(currentDate.getDate() - 3)
+  currentDate.setDate(currentDate.getDate() - 2)
 
   schedule = schedule.sort((a, b) => {
     const dateA = new Date(a.startDate);
