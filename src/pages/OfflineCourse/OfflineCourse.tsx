@@ -36,7 +36,7 @@ export const OfflineCourse: React.FC = () => {
         <span className='mb-2 block'>
           <b>Модуль:</b> 6000 грн
         </span>
-        <span className='mb-2 block'>
+        <span className='mb-2 block text-sm'>
           <b>Група практики:</b> 800 грн 
         </span>
         <div className='mb-2'>
@@ -61,7 +61,7 @@ export const OfflineCourse: React.FC = () => {
 
       </div>
         {showRequisites && (
-          <div className='text-left w-max mt-2 mx-auto text-gray-600'>
+          <div className='text-left w-max mt-2 mx-auto text-gray-600 mt-3'>
             <p className="bg-yellow-100 p-1 inline-block">За модуль</p>
             <br/>
             {ie.recipient} <CopyButton value={ie.recipient} />
@@ -112,7 +112,7 @@ export const OfflineCourse: React.FC = () => {
           </div>
         )}
       
-        {showSchedule && (<div className='flex justify-center items-center'>
+        {showSchedule && (<div className='flex justify-center items-center mt-4'>
         <div className='w-[350px] text-gray-600'>
           <Schedule 
             modules={modules}
