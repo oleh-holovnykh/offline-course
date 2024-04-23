@@ -12,6 +12,8 @@ export const Schedule: React.FC<Props> = ({ modules, practices, retreats }) => {
   const groups = createSchedule(modules, practices, retreats);
   
   return <div>
+    <div className='flex justify-center items-center'>
+      <div className='w-[350px] text-gray-600'>
     {
     groups.map((group, i) => {
       const startDate = new Date(group.startDate);
@@ -44,5 +46,5 @@ export const Schedule: React.FC<Props> = ({ modules, practices, retreats }) => {
       </div>
     })
     }  
-  </div>;
+  </div></div></div>;
 };
