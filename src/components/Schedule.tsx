@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Module, PracticeClass, Retreat } from "../types/events";
 import { createSchedule } from '../helpers/сreateSchedule';
